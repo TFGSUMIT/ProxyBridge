@@ -1,0 +1,26 @@
+import unittest
+import os
+
+class TestStartup(unittest.TestCase):
+    def test_set_run_at_startup(self):
+        # Set the 'run at startup' option to enabled
+        set_run_at_startup()
+
+        # Get the current state of the 'run at startup' option
+        run_at_startup = get_run_at_startup()
+
+        # Check if the option is enabled
+        self.assertTrue(run_at_startup)
+
+    def test_get_run_at_startup(self):
+        # Set the 'run at startup' option to enabled
+        set_run_at_startup()
+
+        # Get the current state of the 'run at startup' option
+        run_at_startup = get_run_at_startup()
+
+        # Check if the option is enabled
+        self.assertTrue(run_at_startup)
+
+if __name__ == "__main__":
+    unittest.main()
